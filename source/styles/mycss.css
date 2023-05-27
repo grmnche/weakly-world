@@ -1,5 +1,5 @@
 * {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -14,9 +14,7 @@ body {
   border: none;
   height: 1px;
   background: #dad394;
-  box-shadow:
-    0 0 20px rgb(255, 255, 255),
-    0 0 30px rgb(255, 255, 255),
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
     0 0 40px rgb(255, 255, 255);
 }
 
@@ -24,13 +22,11 @@ body {
   border: none;
   height: 1px;
   background: rgb(218, 211, 148);
-  box-shadow:
-    0 0 20px rgb(255, 255, 255),
-    0 0 30px rgb(255, 255, 255),
+  box-shadow: 0 0 20px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255),
     0 0 40px rgb(255, 255, 255);
 }
 
-/* Шапка */
+/* Хедер */
 .main-text {
   z-index: 2;
 }
@@ -73,8 +69,7 @@ body {
 }
 
 .main-text {
-  text-shadow:
-    0 0 30px rgb(218, 211, 148);
+  text-shadow: 0 0 30px rgb(218, 211, 148);
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 }
 
@@ -91,17 +86,15 @@ a {
 
 a:hover {
   color: rgb(224, 220, 179);
-  text-shadow:
-    0 0 10px rgb(255, 255, 255),
-    0 0 30px rgb(255, 255, 255);
+  text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 30px rgb(255, 255, 255);
 }
 
-/* Навигация ____________________ */
+/* Навигация */
 .nav-bar {
   margin-left: 4vw;
   width: 90%;
   z-index: 10;
-  background-color: rgb(0, 0, 0, 0.0);
+  background-color: rgb(0, 0, 0, 0);
   margin-top: 1.8vw;
 }
 
@@ -160,9 +153,7 @@ a:hover {
   width: 0%;
   content: "";
   background-color: rgb(218, 211, 148);
-  box-shadow:
-    0 0 12px rgb(255, 255, 255),
-    0 0 16px rgb(255, 255, 255),
+  box-shadow: 0 0 12px rgb(255, 255, 255), 0 0 16px rgb(255, 255, 255),
     0 0 20px rgb(255, 255, 255);
 }
 
@@ -177,10 +168,10 @@ a:hover {
   max-width: 100%;
 }
 
-/* Главная ____________________ */
+/* Главная */
 .beginning {
   position: relative;
-  top: 30vw
+  top: 30vw;
 }
 
 .icon {
@@ -201,15 +192,14 @@ a:hover {
   left: 25vw;
 }
 
-/* Оформление древа-меню ____________________ */
+/* Дерево-меню */
 #tree-h {
   text-shadow: none;
   transition: 0.4s;
 }
 
 #tree-h:hover {
-  text-shadow:
-    0 0 30px rgb(255, 255, 255);
+  text-shadow: 0 0 30px rgb(255, 255, 255);
   color: rgb(218, 211, 148);
 }
 
@@ -222,7 +212,7 @@ a:hover {
   transform: scale(1.2);
 }
 
-/* Подвал ____________________ */
+/* Подвал */
 .main-footer {
   position: relative;
   top: 38vw;
@@ -243,7 +233,7 @@ a:hover {
   animation: arrow 1s linear infinite;
 }
 
-/* Анимация ____________________ */
+/* Анимация */
 @keyframes arrow {
   0% {
     left: 0;
@@ -326,7 +316,7 @@ a:hover {
   }
 }
 
-/* Бургерная панель ____________________ */
+/* Бургерная панель */
 @media screen and (max-width: 801px) {
   .nav-container {
     display: flex;
@@ -335,23 +325,23 @@ a:hover {
     height: 62px;
   }
 
-  .nav-bar .menu-items {
+  .menu-items {
     display: flex;
   }
 
-  .nav-bar .nav-container li {
+  .nav-container li {
     list-style: none;
   }
 
-  .nav-bar .nav-container a {
+  .nav-container a {
     text-decoration: none;
     color: #ffffff;
     font-weight: 500;
     font-size: 1.6rem;
   }
 
-  .nav-bar .nav-container a:hover {
-    color: rgb(134, 134, 134)
+  .nav-container a:hover {
+    color: rgb(134, 134, 134);
   }
 
   .nav-container {
@@ -359,7 +349,7 @@ a:hover {
     position: relative;
   }
 
-  .nav-container .checkbox {
+  .checkbox {
     position: absolute;
     display: block;
     height: 32px;
@@ -371,7 +361,7 @@ a:hover {
     cursor: pointer;
   }
 
-  .nav-container .hamburger-lines {
+  .hamburger-lines {
     display: block;
     height: 26px;
     width: 32px;
@@ -384,7 +374,7 @@ a:hover {
     justify-content: space-between;
   }
 
-  .nav-container .hamburger-lines .line {
+  .line {
     display: block;
     height: 3px;
     width: 100%;
@@ -392,21 +382,21 @@ a:hover {
     background: #ffffff;
   }
 
-  .nav-container .hamburger-lines .line1 {
+  .line1 {
     transform-origin: 0% 0%;
     transition: transform 0.4s ease-in-out;
   }
 
-  .nav-container .hamburger-lines .line2 {
+  .line2 {
     transition: transform 0.2s ease-in-out;
   }
 
-  .nav-container .hamburger-lines .line3 {
+  .line3 {
     transform-origin: 0% 100%;
     transition: transform 0.4s ease-in-out;
   }
 
-  .nav-bar .menu-items {
+  .menu-items {
     background-color: rgb(0, 0, 0, 0.9);
     padding-top: 120px;
     padding-bottom: 120px;
@@ -420,7 +410,7 @@ a:hover {
     opacity: 0;
   }
 
-  .nav-bar .menu-items li {
+  .menu-items li {
     margin-bottom: 1.2rem;
     font-size: 1.5rem;
     font-weight: 500;
@@ -432,24 +422,24 @@ a:hover {
     left: 0px;
   }
 
-  .nav-container input[type="checkbox"]:checked~.menu-items {
+  .nav-container input[type="checkbox"]:checked ~ .menu-items {
     transform: translateX(0);
     opacity: 1;
   }
 
-  .nav-container input[type="checkbox"]:checked~.hamburger-lines .line1 {
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
     transform: rotate(45deg);
   }
 
-  .nav-container input[type="checkbox"]:checked~.hamburger-lines .line2 {
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
     transform: scaleY(0);
   }
 
-  .nav-container input[type="checkbox"]:checked~.hamburger-lines .line3 {
+  .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
     transform: rotate(-45deg);
   }
 
-  .nav-container input[type="checkbox"]:checked~.nav-logo {
+  .nav-container input[type="checkbox"]:checked ~ .nav-logo {
     display: none;
   }
 }
