@@ -73,7 +73,7 @@ body {
   transform: translate3d(0, calc(var(--scrollTop) / 2), 0);
 }
 
-/* Текст ____________________ */
+/* Текст */
 span {
   font-weight: bold;
 }
@@ -184,12 +184,6 @@ a:hover {
 
 .main-text {
   margin: 24vw 0vw 8vw 7vw;
-}
-
-.fade-kso-3 {
-  position: relative;
-  top: 30vw;
-  left: 25vw;
 }
 
 /* Дерево-меню */
